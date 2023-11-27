@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package="github/w3gop2p/GRPC-middleware/product/proto";
+option go_package="github/w3gop2p/GRPC-middleware/ch2/product/proto";
 
 message GetProductRequest {
   int32 product_id = 1;

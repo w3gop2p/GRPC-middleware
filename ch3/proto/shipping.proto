@@ -1,12 +1,11 @@
 syntax = "proto3";
-option go_package="github/w3gop2p/GRPC-middleware/ch1/proto";
+option go_package="github/w3gop2p/GRPC-middleware/ch3";
 
 message CreateShippingRequest {
   int32 user_id = 1;
   int32 order_id = 2;
   string address = 3;
 }
-
 
 message CreateShippingResponse {
   int32 shipping_id = 1;

@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	shipping "github.com/w3gop2p/ch1/proto"
+	shipping "github.com/w3gop2p/GRPC-middleware/ch1/proto"
 	"google.golang.org/grpc"
 	"log"
 	"time"
