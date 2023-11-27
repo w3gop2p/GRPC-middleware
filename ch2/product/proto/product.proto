@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package="github/w3gop2p/GRPC-middleware/product/proto";
+
+message GetProductRequest {
+  int32 product_id = 1;
+}
+
+message GetProductResponse {
+  string title = 1;
+}
+
+service ProductService {
+  rpc Get(GetProductRequest) returns (GetProductResponse){}
+}
