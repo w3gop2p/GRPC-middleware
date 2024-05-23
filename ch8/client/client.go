@@ -54,8 +54,8 @@ func main() {
 	orderClient := order.NewOrderServiceClient(conn)
 	log.Println("Creating order...")
 	orderResponse, errCreate := orderClient.Create(context.Background(), &order.CreateOrderRequest{
-		UserId:    -1,
-		ProductId: 0,
+		UserId:    1,
+		ProductId: 1,
 		Price:     2,
 	})
 

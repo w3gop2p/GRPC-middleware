@@ -19,7 +19,7 @@ func main() {
 	defer conn.Close()
 
 	shippingClient := shipping.NewShippingServiceClient(conn)
-	ctx, _ := context.WithTimeout(context.Background(), 1*time.Second)
+	ctx, _ := context.WithTimeout(context.Background(), 15*time.Second)
 	log.Println("Creating shipping...")
 	_, errCreate := shippingClient.Create(ctx, &shipping.CreateShippingRequest{UserId: 23})
 	if errCreate != nil {

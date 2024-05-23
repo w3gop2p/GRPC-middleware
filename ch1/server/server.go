@@ -21,7 +21,7 @@ func (s *server) Create(ctx context.Context, in *shipping.CreateShippingRequest)
 }
 
 func main() {
-	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
 
 	go func() {
 		res := randomFunc(ctx, "a")
